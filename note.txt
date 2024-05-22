@@ -1,0 +1,60 @@
+CSS = men-styling HTML
+
+format penulisan CSS :
+selector
+{
+    property1; value1;
+    ...
+    propertyN: valueN;
+}
+    selector :
+    1. tag html (tanpa simbol kurang dan lebih)
+    contoh :
+    <h1>...</h1> = selector ==>h1
+    <p>...</p> = selector ==> p
+
+    2. kombinasi tag html
+        <div>
+            <h1>Konten 1</h1>
+        </div>
+        <h1>Konten 2</h1>
+        Ingin men-styling h1 dengan kontennya "konten 1"
+
+        -div > h1 {...}
+        -div h1 {...}
+
+    3.  nama_id / value dari atribut id ==> #nama_id
+    4.  nama_class / value dari atribut class ==> .nama_class
+
+    Cara penulisan CSS:
+    -   inline CSS
+    -   internal CSS
+    -   external CSS
+
+    B. Property     ==> sifat / karakteristik dari elemen HTML yang mau dimodifikasi / dimanipulasi
+Contoh: 
+    - color 
+    - background 
+    - border
+    - margin
+    - padding
+
+
+
+GITHUB REPOSITORY
+
+https://github.com/neeestle/batch3-sesi3.git
+
+Step-Step local->remote repository :
+
+git init 
+
+git remote add origin https://......git 
+
+git status
+
+git add . 
+
+git push -u origin master 
+atau 
+git push -u origin main

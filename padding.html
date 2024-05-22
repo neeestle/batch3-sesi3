@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <style>
+
+        /*
+            kondisi 1
+                property: value;    ==> value = atas = kanan = bawah = kiri
+
+            kondisi 2
+                property: value1 value2;    ==> value1 = atas = bawah; value2 = kanan = kiri
+
+            kondisi 3
+                property: value1 value2 value3 value4;    ==> value1 = atas; value2 = kanan; value3 = bawah; value4 = kiri
+
+            kondisi 4
+                property-top: value1;
+                property-right: value2;
+                property-bottom: value3;
+                property-left: value4;
+
+        */
+        /* tanpa box sizing tanpa property  */
+        
+        body{
+            background: chartreuse;
+        }
+
+        #box-1 {
+            background: blueviolet;
+            height: 200px;
+            width: 300px;  
+            margin: 20px; /* semua arahnya 20px */
+            padding: 20px; /* semua arahnya 30px */
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times,'Times New Roman', Times, serif;
+            border-radius: 10px;
+            overflow-y: auto;
+            text-align: right;
+        }
+
+            /* menggunakan box sizing: border-box */
+         #box-2 {
+            background: red;
+            height: 100px;
+            width: 200px;  
+            margin: 60px 150px; /* atas = bawah = 60px; kanan = kiri = 150px */
+            padding: 15px 50px;
+            font-style: italic;
+            overflow-y: auto;
+            /* box-sizing: border-box; */
+
+        }
+        #box-3 {
+            background: orange;
+            height: 200px;
+            width: 200px;  
+            margin:  10px 60px 150px 10px; /* atas = 10px; kanan = 60px; bawah = 150px; kiri = 10px; */
+            text-decoration: line-through;
+            overflow-y: auto;
+        }
+
+        #box-4 {
+            background: black;
+            color: white;
+            width: 20%;
+            height: 100px;
+            margin-top: 1em; 
+            margin-right: 2em; 
+            margin-bottom: 2em; 
+            margin-left: 3em; 
+            padding-top: 2em; 
+            padding-right: 3em; 
+            padding-bottom: 1em; 
+            padding-left: 4em; 
+        }
+    </style>
+
+</head>
+<body>
+    <h1>PADDING</h1>
+
+    <div id="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga itaque iure unde maiores eligendi delectus voluptatum deleniti doloremque rerum? Odit a voluptas dicta id placeat fugiat. Reiciendis, autem quam.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur velit labore, minima corporis impedit veniam, facilis nihil repudiandae id ratione vel. Sequi, eligendi nihil ad quam numquam sunt ratione. Quas.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quae natus voluptates aspernatur excepturi assumenda laborum iusto aliquid quisquam quaerat. Sapiente nihil voluptas amet deserunt commodi. Nostrum aliquam et reiciendis!
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt aperiam reprehenderit commodi mollitia odio tenetur quas sed. Libero illum cumque expedita ratione totam esse saepe at. Eligendi, consequuntur quo!
+    </div>
+    <div id="box-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas facilis, saepe doloribus sequi quis voluptate asperiores voluptatum maiores distinctio architecto eum pariatur, ratione quidem ipsa, expedita ab atque sunt quia!</div>
+    <div id="box-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, cumque. Fugiat nulla laborum, tempore ab exercitationem amet nobis magnam laudantium optio aspernatur nostrum quidem ullam fugit officiis saepe rem quisquam?</div>
+    <div id="box-4">Ini adalah Box 4</div>
+
+</body>
+</html>

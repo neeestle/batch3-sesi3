@@ -1,0 +1,18 @@
+h1 
+{
+    color: blue; 
+    background: yellow;
+}
+
+h2
+{
+    color: green;
+    background: yellowgreen;
+}
+
+/* CTRL + / = COMMENT */
+.artikel h1{
+    color: red;
+    background: blue;
+    font-size: 20px;
+}
